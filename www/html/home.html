@@ -2,10 +2,9 @@
 
 <head>
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../css/personalPage.css">
+    <link rel="stylesheet" href="../css/home.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 </head>
 
@@ -14,7 +13,14 @@
 <div class="container">
         <!-- TOP NAVBAR -->
         <div id="topNavbar">
-            <p class="glyphicon glyphicon-cog" id="topIcon"> </p>
+            <div class="emptyDiv">
+            </div>
+
+            <div class="contentDiv">
+                <a href="#">
+                    <p class="glyphicon glyphicon-cog" id="topIcon"> </p>
+                </a>
+            </div>
         </div>
 
         <!-- BOTTOM NAVBAR -->
@@ -32,7 +38,7 @@
                 </a>
             </div>
 
-            <div class="barElement" id="affitta">
+            <div class="barElement" id="rent">
                 <a href="#">
                     <div class="iconDiv">
                         <p class="glyphicon glyphicon-tags" id="myIcon"> </p>
@@ -47,11 +53,11 @@
             <div class="barElement" id="home">
                 <a href="#">
                     <div class="iconDiv">
-                        <p class="glyphicon glyphicon-home" id="myIcon"> </p>
+                        <p class="glyphicon glyphicon-home selected" id="myIcon"> </p>
                     </div>
 
                     <div class="textDiv">
-                        <p class="myText"> Home </p>
+                        <p class="myText selected"> Home </p>
                     </div>
                 </a>
             </div>
@@ -79,32 +85,6 @@
                     </div>
                 </a>
             </div>
-<!--
-            <div class="barElement" id="search">
-                <a class="navbar-brand" href="#">
-                   <p class="glyphicon glyphicon-search">
-                   </p>
-                </a>
-            </div>
-
-            <div class="barElement">
-                <a class="navbar-brand" href="#">Vendi</a>
-            </div>
-
-            <div class="barElement">
-                <a class="navbar-brand" href="#">LOGO</a>
-            </div>
-
-            <div class="barElement">
-                <a class="navbar-brand" href="#">Preferiti</a>
-            </div>
-
-            <div class="barElement">
-                <a class="navbar-brand" href="#">Messaggi</a>
-            </div>
--->
-
-
 
         </div>
 
@@ -113,6 +93,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/home.js"></script>
 </body>
 
 </html>

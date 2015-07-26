@@ -1,4 +1,6 @@
-/*  BOTTOM NAVBAR css  */
+@media screen and (max-width:480px){
+
+    /*  BOTTOM NAVBAR css  */
 #bottomNavbar{
 
     height: 3em;
@@ -37,14 +39,14 @@
     text-align: center;
     font-size: 1.5em;
     padding-top: 0.1em;
-    color: #696969;
+    color: #7e7e7e;
 }
 
 .myText{
     text-align: center;
     font-size: 0.8em;
     padding-bottom: 0.2em;
-    color: #696969;
+    color: #7e7e7e;
 }
 
 a{
@@ -69,7 +71,8 @@ a:link{
 }
 
 
-/*  TOP NAVBAR css */
+
+    /*  TOP NAVBAR css */
 #topNavbar{
     height: 2em;
 /*    border-top: 0.2em solid #0084B4;*/
@@ -83,11 +86,32 @@ a:link{
     margin-top: 0.5em;
 }
 
+.emptyDiv{
+    display: inline-block;
+    min-width: 90%;
+    height: auto;
+}
+
+.contentDiv{
+    display: inline-block;
+    width: 8%;
+    height: auto;
+}
+
 #topIcon{
-    display: block;
-    position: relative;
-    text-align: right;
+    width: 100%;
     height: 100%;
     font-size: 1.5em;
     padding-top: 0.1em;
+    padding-right: 0.1em;
+    color: black;
+}
+
+
+}
+
+@media screen and (min-width:480px){
+    *{
+        color:red;
+    }
 }
