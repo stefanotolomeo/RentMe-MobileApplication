@@ -4,26 +4,81 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../css/search.css">
 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 
 <body>
-<div class="container">
+<div class="myContainer">
         <!-- TOP NAVBAR -->
-        <div id="topNavbar">
-            <div class="emptyDiv">
+        <div class="topNavbar">
+            <div class="firstRow">
+
             </div>
 
-            <div class="contentDiv">
-                <a href="#">
-                    <p class="glyphicon glyphicon-cog" id="topIcon"> </p>
-                </a>
+            <div class="secondRow">
+                <div class="emptyDiv">
+                </div>
+
+                <div class="contentDiv">
+                    <a href="#">
+                        <p class="glyphicon glyphicon-cog" id="topIcon"> </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
+    <div class="container">
+
+        <div class="centralContent">
+            <div class="searchBox">
+                <div class="area">
+                    <div class="areaText">
+                        <p class="textChoice"> Area: </p>
+                    </div>
+
+                    <div class="areaOption">
+                        <form>
+                            <input type="radio" name="area" value="centro" checked>Centro
+
+                            <input type="radio" name="area" value="nord" checked>Nord
+
+                            <input type="radio" name="area" value="sud">Sud
+
+                            <input type="radio" name="area" value="ovest">Ovest
+
+                            <input type="radio" name="area" value="est">Est
+                        </form>
+                    </div>
+                </div>
+
+                <div class="zona">
+                    <div class="zonaText">
+                        <p class="textChoice">Zona: </p>
+                    </div>
+
+                    <div class="zonaOption">
+                        <select>
+                              <option value="empty"></option>
+                              <option value="volvo">Stazione Centrale</option>
+                              <option value="saab">Garibaldi</option>
+                              <option value="opel">Porta Venezia</option>
+                              <option value="audi">Loreto/Piola</option>
+                        </select>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="googleMap">
             </div>
         </div>
 
-        <!-- BOTTOM NAVBAR -->
+          <!-- BOTTOM NAVBAR -->
         <div id="bottomNavbar">
 
             <div class="barElement" id="search">
@@ -87,7 +142,6 @@
             </div>
 
         </div>
-
 
     </div>
 
