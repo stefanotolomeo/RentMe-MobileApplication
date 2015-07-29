@@ -1,3 +1,5 @@
+$(document).ready(signUp);
+
 function eraseLogin() {
 
     document.getElementById("email").value = "";
@@ -27,4 +29,31 @@ function check(){
     }
 
 
+}
+
+
+function signUp(){
+    console.log("dentro");
+    $("#confirmButton").on("click",function(){
+        var firstname=$(".firstName").val();
+        var lastname=$(".lastName").val();
+        var email=$(".email").val();
+
+        $.ajax({
+            method: "POST",
+            //dataType: "json", //type of data
+            crossDomain: true,
+            url: "http://rentme.altervista.org/Registrazione/registrazione.php", //Relative or absolute path to file.php file
+            data: {name:firstname , surname:lastname , email:email},
+
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(request,error)
+            {
+                console.log(request+":"+error);
+            }
+        });
+        return false;
+    });
 }
