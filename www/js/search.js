@@ -16,8 +16,25 @@ function initialize() {
                     }, // here´s the array of controls
           disableDefaultUI: true,
         };
+
         var map = new google.maps.Map(document.getElementById('googleMap'),
             mapOptions);
 
+      // Create marker
+        var marker = new google.maps.Marker({
+          map: map,
+          position: new google.maps.LatLng(latMilano, longMilano),
+          title: 'Milano Centro'
+        });
+
+        // Add circle overlay and bind to marker
+        var circle = new google.maps.Circle({
+          map: map,
+          radius: 900,    // 10 miles in metres
+          fillColor: '#AA0000'
+        });
+        circle.bindTo('center', marker, 'position');
+
     }
       google.maps.event.addDomListener(window, 'load', initialize);
+

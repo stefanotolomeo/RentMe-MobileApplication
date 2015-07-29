@@ -1,9 +1,9 @@
-$(document).ready(signUp);
+
 
 function eraseLogin() {
 
-    document.getElementById("email").value = "";
-    document.getElementById("password").value = "";
+    document.getElementById("emailLogin").value = "";
+    document.getElementById("passwordLogin").value = "";
 }
 
 function eraseSignUp(){
@@ -31,29 +31,57 @@ function check(){
 
 }
 
-
 function signUp(){
-    console.log("dentro");
-    $("#confirmButton").on("click",function(){
-        var firstname=$(".firstName").val();
-        var lastname=$(".lastName").val();
-        var email=$(".email").val();
+    console.log("dentro signUp");
 
-        $.ajax({
-            method: "POST",
-            //dataType: "json", //type of data
-            crossDomain: true,
-            url: "http://rentme.altervista.org/Registrazione/registrazione.php", //Relative or absolute path to file.php file
-            data: {name:firstname , surname:lastname , email:email},
+    var firstname=document.getElementById("firstName").value;
+    var lastname=document.getElementById("lastName").value;
+    var email=document.getElementById("emailSignUp").value;
 
-            success: function(response) {
-                console.log(response);
-            },
-            error: function(request,error)
-            {
-                console.log(request+":"+error);
-            }
-        });
-        return false;
+    $.ajax({
+        method: "POST",
+        //dataType: "json", //type of data
+        crossDomain: true,
+        url: "http://rentme.altervista.org/Registrazione/registrazione.php", //Relative or absolute path to file.php file
+        data: {name:firstname , surname:lastname , email:email},
+
+        success: function(response) {
+            console.log(response);
+        },
+
+        error: function(request,error)
+        {
+            console.log(request+":"+error);
+        }
     });
+    console.log("fine signUp");
+    eraseSignUp();
+    return false;
+}
+
+function login(){
+    console.log("dentro login");
+
+    var emailLogin=document.getElementById("emailLogin").value;
+    var pwLogin=document.getElementById("passwordLogin").value;
+
+    $.ajax({
+        method: "POST",
+        //dataType: "json", //type of data
+        crossDomain: true,
+        url: "http://rentme.altervista.org/Login/login.php", //Relative or absolute path to file.php file
+        data: {email:emailLogin , pw:pwLogin},
+
+        success: function(response) {
+            console.log(response);
+        },
+
+        error: function(request,error)
+        {
+            console.log(request+":"+error);
+        }
+    });
+    console.log("fine login");
+    eraseLogin();
+    return false;
 }

@@ -38,16 +38,16 @@
                             <div class="modal-body" id="formDiv">
                                 <form onload="javascript:eraseLogin();">
                                         Email:<br>
-                                        <input id="email" type="text" name="firstname">
+                                        <input id="emailLogin" type="text" name="firstname">
                                         <br>
                                         Password:<br>
-                                        <input id="password" type="password" maxlength="10" name="lastname">
+                                        <input id="passwordLogin" type="password" maxlength="10" name="lastname">
                                         <br><br>
                                 </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" id="closeButton" data-dismiss="modal" onclick="javascript:eraseLogin();">Close</button>
-                                  <button type="button" class="btn btn-default" id="confirmButton" data-dismiss="modal" onclick="javascript:eraseLogin();">Confirm</button>
+                                  <button type="button" class="btn btn-default" id="confirmButton" data-dismiss="modal" onclick="login();">Confirm</button>
                             </div>
                         </div>
 
@@ -98,7 +98,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" id="closeButton" data-dismiss="modal" onclick="javascript:eraseSignUp();">Close</button>
-                                  <button type="button" class="btn btn-default" id="confirmButton" data-dismiss="modal" onclick="javascript:check();">Confirm</button>
+                                  <button type="button" class="btn btn-default" id="confirmButton" data-dismiss="modal" onclick="signUp()">Confirm</button>
                             </div>
                         </div>
 
