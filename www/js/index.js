@@ -73,7 +73,12 @@ function login(){
         data: {email:emailLogin , pw:pwLogin},
 
         success: function(response) {
-            console.log(response);
+            //console.log(response);
+            var userId=JSON.parse(response);
+
+            var myId=userId[0].id;
+
+            document.location.href="html/home.html?id=myId";
         },
 
         error: function(request,error)
