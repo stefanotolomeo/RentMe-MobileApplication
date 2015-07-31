@@ -1,17 +1,21 @@
 
 @media only screen and (max-width:320px){
-     /*  BOTTOM NAVBAR css  */
+
+.myContainer{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    /*  BOTTOM NAVBAR css  */
 #bottomNavbar{
 
-    height: 2em;
-    border-top: 0.2em solid #0084B4;
-    max-height: 4em;
+    display: block;
+    width: 100%;
+    height: 7%;
     position: fixed;
     bottom: 0;
-    width: 100%;
     left: 0;
-    right: 0;
-    background-color: #e9e9e9;
+    border-top: 0.2em solid #0084B4;
 }
 
 .barElement{
@@ -63,42 +67,58 @@ a:link{
 }
 
 
-
-    /*  TOP NAVBAR css */
-#topNavbar{
-    height: 1.5em;
-/*    border-top: 0.2em solid #0084B4;*/
-    max-height: 2em;
-    position: fixed;
-    top: 0;
+ /*  TOP-NAVBAR css */
+.topNavbar{
+    display: block;
+    height: 6%;
     width: 100%;
-    left: 0;
-    right: 0;
+    max-height: 2.4em;
+}
+
+.firstRow{
+    display: block;
+    width: 100%;
+    height:20%;
+}
+
+.secondRow{
+    display: block;
+    width: 100%;
+    height: 80%;
+    border:1px solid blue;
     background-color: #0084B4;
-    margin-top: 0.4em;
 }
 
 .emptyDiv{
     display: inline-block;
     min-width: 90%;
-    height: auto;
+    height: 100%;
 }
 
 .contentDiv{
     display: inline-block;
     width: 8%;
-    height: auto;
+    height: 100%;
 }
 
 #topIcon{
     width: 100%;
     height: 100%;
-    font-size: 1.3em;
-    padding-right: 0.1em;
+    font-size: 1.2em;
     color: black;
     text-align: right;
 
 }
+/*   END TOP-NAVBAR  */
+
+/*   SEARCH CONTENT    */
+.centralContent{
+    display: block;
+    height: 85%;
+    width: 100%;
+    border:0.1em solid green;
+    margin-top: 0.3em;
+    }
 
 }
 
@@ -106,18 +126,21 @@ a:link{
 
 @media only screen and (min-width : 320px) and (max-width : 600px) {
 
+.myContainer{
+    margin-right: 0;
+    margin-left: 0;
+}
     /*  BOTTOM NAVBAR css  */
 #bottomNavbar{
 
-    height: 3em;
-    border-top: 0.2em solid #0084B4;
-    max-height: 4em;
+    display: block;
+    width: 100%;
+    height: 9%;
     position: fixed;
     bottom: 0;
-    width: auto;
     left: 0;
-    right: 0;
-    background-color: #e9e9e9;
+    border-top: 0.2em solid #0084B4;
+    background-color: lightgray;
 }
 
 .barElement{
@@ -175,45 +198,118 @@ a:active{
 a:link{
     text-decoration: none;
 }
+/*  END BOTTOM-NAVBAR */
 
 
-
-    /*  TOP NAVBAR css */
-#topNavbar{
-    height: 2em;
-/*    border-top: 0.2em solid #0084B4;*/
-    max-height: 3em;
-    position: fixed;
-    top: 0;
+    /*  TOP-NAVBAR css */
+.topNavbar{
+    display: block;
+    height: 7%;
     width: 100%;
-    left: 0;
-    right: 0;
+    max-height: 2.4em;
+}
+
+.firstRow{
+    display: block;
+    width: 100%;
+    height:20%;
+}
+
+.secondRow{
+    display: block;
+    width: 100%;
+    height: 75%;
+    border:1px solid blue;
     background-color: #0084B4;
-    margin-top: 0.5em;
 }
 
 .emptyDiv{
     display: inline-block;
     min-width: 90%;
-    height: auto;
+    height: 100%;
 }
 
 .contentDiv{
     display: inline-block;
     width: 8%;
-    height: auto;
+    height: 100%;
 }
 
 #topIcon{
     width: 100%;
     height: 100%;
-    font-size: 1.5em;
-    padding-top: 0.1em;
-    padding-right: 0.1em;
+    font-size: 1.4em;
     color: black;
     text-align: right;
 
 }
+/*   END TOP-NAVBAR  */
+
+/*   SEARCH CONTENT    */
+.centralContent{
+    display: block;
+    /*   25% a noticePanel --> da sistemare nel js               height: 125%; */
+    height: 80%;
+    width: 100%;
+    border:0.1em solid green;
+    margin-top: 0.3em;
+    }
+
+.newDiv{
+    display: block;
+    width: 100%;
+    height: 8%;
+}
+
+#newLink{
+    display: block;
+    text-align: left;
+    float: left;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+}
+
+.noticeList{
+    display: none;
+    width: 100%;
+    height: 90%;
+}
+
+.noticePanel{
+    display: block;
+    height: 7em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border: 2px solid #0084B4;
+    border-top-left-radius:8em;
+    border-bottom-right-radius: 8em;
+}
+
+.noticeHeader{
+    display: block;
+    height: 70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top:1em;
+}
+
+.noticeModify{
+    display: block;
+    height: 25%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+}
+
 
 
 }
@@ -222,25 +318,27 @@ a:link{
 @media only screen and (min-width:600px){
 
 
-        /*  BOTTOM NAVBAR css  */
+.myContainer{
+    margin-right: 0;
+    margin-left: 0;
+}
+    /*  BOTTOM NAVBAR css  */
 #bottomNavbar{
 
-    height: 3.5em;
-    border-top: 0.2em solid #0084B4;
-    max-height: 4em;
+    display: block;
+    width: 100%;
+    height: 10%;
     position: fixed;
     bottom: 0;
-    width: 100%;
     left: 0;
-    right: 0;
-    background-color: #e9e9e9;
+    border-top: 0.2em solid #0084B4;
 
 }
 
 .barElement{
     display: inline-block;
-    height: 3.5em;
-    width: 19%;
+    height: 3em;
+    width: 18%;
     margin-left: 0.1em;
     margin-right: 0.1em;
 }
@@ -260,15 +358,15 @@ a:link{
 #myIcon{
     display: block;
     text-align: center;
-    font-size: 2em;
-    padding-top: 0.2em;
+    font-size: 1.5em;
+    padding-top: 0.1em;
     color: #7e7e7e;
 }
 
 .myText{
     text-align: center;
     font-size: 0.8em;
-    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     color: #7e7e7e;
 }
 
@@ -292,48 +390,66 @@ a:active{
 a:link{
     text-decoration: none;
 }
+/*  END BOTTOM-NAVBAR */
 
 
-
-    /*  TOP NAVBAR css */
-#topNavbar{
-    height: 2.5em;
-/*    border-top: 0.2em solid #0084B4;*/
-    max-height: 3em;
-    position: fixed;
-    top: 0;
+    /*  TOP-NAVBAR css */
+.topNavbar{
+    display: block;
+    height: 7%;
     width: 100%;
-    left: 0;
-    right: 0;
+    max-height: 2.4em;
+}
+
+.firstRow{
+    display: block;
+    width: 100%;
+    height:20%;
+}
+
+.secondRow{
+    display: block;
+    width: 100%;
+    height: 75%;
+    border:1px solid blue;
     background-color: #0084B4;
-    margin-top: 0.8em;
 }
 
 .emptyDiv{
     display: inline-block;
     min-width: 90%;
-    height: auto;
+    height: 100%;
 }
 
 .contentDiv{
     display: inline-block;
     width: 8%;
-    height: auto;
+    height: 100%;
 }
 
 #topIcon{
     width: 100%;
     height: 100%;
-    font-size: 2em;
-    padding-top: 0.1em;
-    padding-right: 0.1em;
+    font-size: 1.4em;
     color: black;
     text-align: right;
+
+}
+/*   END TOP-NAVBAR  */
+
+/*   SEARCH CONTENT    */
+.centralContent{
+    display: block;
+    height: 80%;
+    width: 100%;
+    border:0.1em solid green;
+    margin-top: 0.3em;
 }
 
 .myText{
-    color: red;
+    color:red;
 }
+
 
 }
 

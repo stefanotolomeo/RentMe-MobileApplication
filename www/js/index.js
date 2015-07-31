@@ -78,7 +78,8 @@ function login(){
 
             var myId=userId[0].id;
 
-            document.location.href="html/home.html?id=myId";
+            console.log(myId);
+            //document.location.href="html/home.html?id=myId";
         },
 
         error: function(request,error)
