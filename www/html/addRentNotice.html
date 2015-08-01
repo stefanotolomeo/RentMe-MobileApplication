@@ -1,0 +1,219 @@
+<html ng-app="rentApp">
+<!-- commento-->
+<head>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/addRentNotice.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+<!-- A CONTAINER FOR THE TOP-NAVBAR  -->
+    <div class="myContainer">
+        <!-- TOP NAVBAR -->
+        <div class="topNavbar">
+            <div class="firstRow">
+
+            </div>
+
+            <div class="secondRow">
+                <div class="emptyDiv">
+                </div>
+
+                <div class="contentDiv">
+                    <a href="../html/setting.html">
+                        <p class="glyphicon glyphicon-cog" id="topIcon"> </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTAINER FOR THE CONTENT AND FOR THE BOTTOM-NAVBAR -->
+    <div class="container">
+
+        <div class="centralContent">
+            <div class="backDiv">
+                <button class="glyphicon glyphicon-arrow-left" type="button" onclick="history.go(-1);return true;"> </button>
+            </div>
+
+            <div class="noticeInformation">
+                <div class="intro">
+                    <div class="introPicture">
+                        <img src="http://edu.lnf.infn.it/wp-content/uploads/2015/06/no-image-icon.png" class="img-responsive" id="introIcon"/>
+                    </div>
+
+                    <div class="introName">
+                        <div class="nameDiv">
+                            <input type="text" name="nomeAnnuncio" placeholder="nome annuncio (MAX 40 caratteri)" id="noticeName" maxlength="40">
+                        </div>
+                        <div class="selectDiv">
+                            <div class="select1">
+                                <select>
+                                      <option value="empty"> area </option>
+                                      <option value="a1">Centro</option>
+                                      <option value="a2">Nord</option>
+                                      <option value="a3">Sud</option>
+                                      <option value="a4">Ovest</option>
+                                      <option value="a5">Est</option>
+                                </select>
+                            </div>
+                            <div class="select2">
+                                <select>
+                                      <option value="empty"> zona </option>
+                                      <option value="z1">Stazione Centrale</option>
+                                      <option value="z2">Garibaldi</option>
+                                      <option value="z3">Porta Venezia</option>
+                                      <option value="z4">Loreto/Piola</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <div class="listMenu">
+                       <ul class="nav nav-tabs" id="ulMenu">
+                          <li class="active liMenu"><a class="linkMenu" data-toggle="tab" href="#info">Cosa</a></li>
+                          <li class="liMenu"><a class="linkMenu" data-toggle="tab" href="#posizione">Dove</a></li>
+                          <li class="liMenu"><a class="linkMenu" data-toggle="tab" href="#prezzo">Quanto</a></li>
+                          <li class="liMenu"><a class="linkMenu" data-toggle="tab" href="#foto">Foto</a></li>
+                       </ul>
+                    </div>
+
+                    <div class="tab-content listContent">
+                      <div id="info" class="tab-pane fade in active">
+                          <div class="info">
+                              <div class="infoRow">
+                                    <p> Numero Locali :</p>
+                                    <input type="text" name="numLocali" maxlength="2">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                              </div>
+
+                              <div class="infoRow">
+                                <p class="infoText"> Superficie (mq) : </p>
+                                    <input id="superficieText" type="text" name="supeficie" maxlength="4">
+                                  <span class="glyphicon glyphicon-ok"></span>
+                              </div>
+
+                              <div class="descriptionRow">
+                                    <p class="infoText"> Descrizione</p>
+                                    <textarea rows="3" cols="35" maxlength="80"></textarea>
+                              </div>
+
+                          </div>
+                      </div>
+
+                      <div id="posizione" class="tab-pane fade">
+                            <div class="posizione">
+                                <div class="positionRow">
+                                    <p> Via :</p>
+                                    <input type="text" name="via">
+                              </div>
+
+
+                            </div>
+                      </div>
+
+
+                      <div id="prezzo" class="tab-pane fade">
+                            <div class="prezzo">
+                                prezzo
+                                text area per info prezzo
+
+                                recap previous choice
+                                trasporti vicini
+                            </div>
+                      </div>
+
+                        <div id="foto" class="tab-pane fade">
+                            <div class="foto">
+                                accesso a fotocamera per scattare foto
+                                accesso a galleria
+                            </div>
+                      </div>
+                    </div>
+
+                </div>
+
+                <div class="confirm">
+
+                </div>
+        </div>
+    </div>
+    </div>
+          <!-- BOTTOM NAVBAR -->
+        <div id="bottomNavbar">
+
+            <div class="barElement" id="search">
+                <a href="../html/search.html">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-search" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Cerca </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="barElement" id="rent">
+                <a href="../html/rent.html">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-tags selected" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText selected"> Affitta </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="barElement" id="home">
+                <a href="../html/home.html">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-home" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Home </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="barElement" id="favourite">
+                <a href="../html/favourite.html">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-heart" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Preferiti </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="barElement" id="message">
+                <a href="../html/message.html">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-envelope" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Messaggi </p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/addRentNotice.js"></script>
+</body>
+
+</html>

@@ -36,12 +36,15 @@
 
         <div class="centralContent">
             <div class="newDiv">
-                <a href="#" id="newLink"> Nuovo annuncio <span class="glyphicon glyphicon-plus"> </span> </a>
+                <a href="addRentNotice.html" id="newLink"> Nuovo annuncio <span class="glyphicon glyphicon-plus"> </span> </a>
             </div>
 
             <div class="noticeList" ng-controller="noticeListCtrl">
                 <div class="noticePanel" ng-repeat="a in annunci">
-                    <div class="noticeHeader">{{a.nome}}</div>
+                    <a href="rentDetail.html?id={{a.id}}" id="linkDetail">
+                        <div class="noticeHeader">{{a.nome}}</div>
+                    </a>
+
                     <div class="noticeModify">
                         <a href=""> - modifica - </a>
                     </div>
