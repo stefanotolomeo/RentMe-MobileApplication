@@ -460,6 +460,10 @@ a:link{
     padding-top: 1em;
     padding-left: 1em;
 }
+
+.infoText{
+    font-size: 0.9em;
+}
     /*  END TAB INFO (COSA)   */
 
 /*  TAB DOVE   */
@@ -483,20 +487,55 @@ a:link{
     height: 1.5em;
 }
 
-/*  END TAB DOVE   */
-
-.labelLeft{
-    display: inline-block;
-    width: 10%;
-    height: auto;
+.transportRow{
+    height: 70%;
+    width: 100%;
+    padding-top: 1em;
     padding-left: 1em;
 }
 
-.labelRight{
-    display: inline-block;
-    width: 80%;
-    height: auto;
+.transportRow>p{
+    font-size: 0.9em;
 }
+
+/*  END TAB DOVE   */
+
+
+/*  START TAB QUANTO   */
+.priceRow{
+    height: 20%;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.priceRow>p{
+    display: inline-block;
+    width: 40%;
+    font-size: 0.9em;
+}
+
+.priceRow>input{
+    display: inline-block;
+    width: 30%;
+    height: 1.5em;
+}
+
+.priceDetailRow{
+    height: 70%;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.priceDetailRow>p{
+    font-size: 0.9em;
+}
+}
+
+/*  END TAB QUANTO   */
+
+
 
 
 
