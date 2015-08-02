@@ -306,7 +306,7 @@ a:link{
     display: block;
     height: 80%;
     width: 100%;
-    border:0.1em solid green;
+    :border:0.1em solid green;
     margin-top: 0.3em;
     }
 
@@ -340,7 +340,6 @@ a:link{
     display: block;
     width: 100%;
     height: 10%;
-    border: 1px solid red;
 }
 
 .introPicture{
@@ -383,7 +382,7 @@ a:link{
 
 #noticeName{
     height:auto;
-    width: 100%;
+    width: 95%;
 
 }
 
@@ -536,8 +535,58 @@ a:link{
 /*  END TAB QUANTO   */
 
 
+/*  START TAB FOTO   */
 
 
+
+.emptyPhotoDiv{
+    display: block;
+    width: 100%;
+    height: 15%;
+}
+
+.emptyPhotoDiv>p{
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 0.4em;
+}
+
+table{
+    width: 100%;
+    height: 70%;
+}
+
+tr{
+    width: 5em;
+    height: 2em;
+}
+
+td{
+    width: 2em;
+    height: 2em;
+}
+
+td>a{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+
+/*  END TAB FOTO   */
+
+
+
+#addNoticeButton{
+    float: right;
+    background-color: #0084B4;
+    font-size: 0.8em;
+}
+
+.rightField{
+    color: green;
+}
 
 }
 

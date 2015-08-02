@@ -47,7 +47,7 @@
 
                     <div class="introName">
                         <div class="nameDiv">
-                            <input type="text" name="nomeAnnuncio" placeholder="nome annuncio (MAX 40 caratteri)" id="noticeName" maxlength="40">
+                            <input type="text" name="nomeAnnuncio" placeholder="nome annuncio (MAX 40)" id="noticeName" maxlength="40">
                         </div>
                         <div class="selectDiv">
                             <div class="select1">
@@ -89,17 +89,19 @@
                               <div class="infoRow">
                                     <p> Numero Locali :</p>
                                     <input type="text" name="numLocali" maxlength="2">
-                                    <span class="glyphicon glyphicon-ok"></span>
+                                    <span class="glyphicon glyphicon-ok rightField"></span>
                               </div>
 
                               <div class="infoRow">
                                     <p class="infoText"> Superficie (mq) : </p>
                                     <input id="superficieText" type="text" name="supeficie" maxlength="4">
-                                    <span class="glyphicon glyphicon-ok"></span>
+                                    <span class="glyphicon glyphicon-ok rightField"></span>
                               </div>
 
                               <div class="descriptionRow">
-                                    <p class="infoText"> Descrizione</p>
+                                    <p class="infoText"> Descrizione
+                                        <span class="glyphicon glyphicon-ok rightField"></span>
+                                    </p>
                                     <textarea rows="3" cols="35" maxlength="80"></textarea>
                               </div>
 
@@ -111,11 +113,13 @@
                                 <div class="positionRow">
                                     <p> Via :</p>
                                     <input type="text" name="via">
-                                    <span class="glyphicon glyphicon-ok"></span>
+                                    <span class="glyphicon glyphicon-ok rightField"></span>
                               </div>
 
                               <div class="transportRow">
-                                    <p> Mezzi pubblici vicini (tipo e linea)  :</p>
+                                    <p> Mezzi pubblici vicini (tipo e linea):
+                                        <span class="glyphicon glyphicon-ok rightField"></span>
+                                    </p>
                                     <textarea rows="4" cols="35" maxlength="80"></textarea>
                               </div>
 
@@ -129,12 +133,12 @@
                                 <div class="priceRow">
                                     <p> Prezzo (mensile) :</p>
                                     <input type="text" name="prezzo">
-                                    <span class="glyphicon glyphicon-ok"></span>
+                                    <span class="glyphicon glyphicon-ok rightField"></span>
                                 </div>
 
                               <div class="priceDetailRow">
                                     <p> Note aggiuntive sul prezzo :</p>
-                                    <textarea rows="4" cols="35" maxlength="80"></textarea>
+                                    <textarea rows="4" cols="35" maxlength="80" placeholder="facoltativo"></textarea>
                               </div>
 
 
@@ -142,17 +146,66 @@
                       </div>
 
                         <div id="foto" class="tab-pane fade">
-                            <div class="foto">
-                                accesso a fotocamera per scattare foto
-                                accesso a galleria
+                            <div class="emptyPhotoDiv">
+                                <p> (Facoltativo)</p>
                             </div>
+
+                            <table border="1">
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-plus">
+                                            </span>
+                                        </a>
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+                                </tr>
+
+                            </table>
+
                       </div>
                     </div>
 
                 </div>
 
                 <div class="confirm">
-
+                    <button class="btn btn-info disabled" id="addNoticeButton"> Crea Annuncio </button>
                 </div>
         </div>
     </div>
