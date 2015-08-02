@@ -564,15 +564,22 @@ tr{
 td{
     width: 2em;
     height: 2em;
+    border: 1px solid black;
 }
 
 td>a{
     display: block;
     text-align: center;
     font-size: 2em;
-
 }
 
+.picture{
+    display: none;
+}
+
+.tdNotVisible{
+     border-color: beige;
+}
 
 /*  END TAB FOTO   */
 
