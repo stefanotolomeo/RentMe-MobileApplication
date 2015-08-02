@@ -240,18 +240,88 @@ a:link{
     font-size: 1.4em;
     color: black;
     text-align: right;
-
 }
+
 /*   END TOP-NAVBAR  */
 
 /*   SEARCH CONTENT    */
-.centralContent{
+
+.totalContainer{
     display: block;
     height: 80%;
-    width: 100%;
-    border:0.1em solid green;
+    width: 200%;
+    position: absolute;
+}
+
+.centralContent{
+    display: block;
+    float: left;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    background-color:beige;
     margin-top: 0.3em;
     }
+
+.settingMenu{
+    display: block;
+    float: left;
+    height: 120%;
+    width: 45%;
+    background-color: #9c9c9b;
+    position: relative;
+    left: 50%;
+    margin-top: 0.3em;
+}
+
+.centralContent>p{
+    border: 1px solid red;
+    width:90%;
+}
+
+.notClickable{
+    pointer-events: none;
+}
+
+.settingOption{
+    display: inline-block;
+    height: auto;
+    width: 32%;
+    border: 1px solid black;
+}
+
+.child{
+    display: inline-block;
+    height: 100%;
+    width: 65%;
+    border: 1px solid white;
+}
+.settingList{
+    display: block;
+    height: 10%;
+    width: 100%;
+    border-top: 2px solid red;
+    margin-top: 0.3em;
+}
+
+
+
+.settingList>h6{
+    padding-left: 0.2em;
+}
+
+.settingList:last-child{
+    border-bottom: 2px solid red;
+}
+
+.settingListBolder{
+    background-color: dimgray;
+    font-weight: bolder;
+}
+body{
+    :overflow: hidden;
+}
 
 }
 

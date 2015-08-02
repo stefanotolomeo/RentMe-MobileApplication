@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="contentDiv">
-                    <a href="../html/setting.html">
+                    <a id="openSettingMenu">
                         <p class="glyphicon glyphicon-cog" id="topIcon"> </p>
                     </a>
                 </div>
@@ -33,18 +33,52 @@
     </div>
 
     <!-- CONTAINER FOR THE CONTENT AND FOR THE BOTTOM-NAVBAR -->
-    <div class="container">
+    <div class="allElement">
+        <div class="totalContainer">
+            <div class="centralContent">
+                <p> ciao provaa </p>
+                <p> ciao prova 2</p>
 
-        <div class="centralContent">
 
+            </div>
+                <!--    SETTING MENU       -->
+            <div class="settingMenu">
+                <div class="settingOption">
+                    <div class="settingList">
+                        <h6> Dati <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+
+                    <div class="settingList">
+                        <h6> Impostazioni <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+
+                    <div class="settingList">
+                        <h6> Lingua <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+
+                    <div class="settingList">
+                        <h6> Info <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="child">
+                aaaa
+            </div>
 
         </div>
+
+
 
           <!-- BOTTOM NAVBAR -->
         <div id="bottomNavbar">
 
             <div class="barElement" id="search">
-                <a href="../html/search.html">
+                <a href="../html/search.html" class="linkToChange">
                     <div class="iconDiv">
                         <p class="glyphicon glyphicon-search" id="myIcon"> </p>
                     </div>
@@ -56,7 +90,7 @@
             </div>
 
             <div class="barElement" id="rent">
-                <a href="../html/rent.html">
+                <a href="../html/rent.html" class="linkToChange">
                     <div class="iconDiv">
                         <p class="glyphicon glyphicon-tags" id="myIcon"> </p>
                     </div>
@@ -67,7 +101,7 @@
                 </a>
             </div>
 
-            <div class="barElement" id="home">
+            <div class="barElement divNotClickable" id="home">
                 <a href="../html/home.html">
                     <div class="iconDiv">
                         <p class="glyphicon glyphicon-home selected" id="myIcon"> </p>
@@ -79,7 +113,7 @@
                 </a>
             </div>
 
-            <div class="barElement" id="favourite">
+            <div class="barElement divNotClickable" id="favourite">
                 <a href="../html/favourite.html">
                     <div class="iconDiv">
                         <p class="glyphicon glyphicon-heart" id="myIcon"> </p>
@@ -91,7 +125,7 @@
                 </a>
             </div>
 
-            <div class="barElement" id="message">
+            <div class="barElement divNotClickable" id="message">
                 <a href="../html/message.html">
                     <div class="iconDiv">
                         <p class="glyphicon glyphicon-envelope" id="myIcon"> </p>
@@ -106,6 +140,9 @@
         </div>
 
     </div>
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
