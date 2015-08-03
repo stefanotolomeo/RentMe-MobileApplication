@@ -37,7 +37,7 @@ function loadStuff(){
         if(count%2==0){
             $('.settingMenu').animate({ marginLeft: '-15%' , opacity: 1 }, 500);
             $(".centralContent").fadeTo( "slow" , 0.2);
-            $("#bottomNavbar").fadeTo( "slow" , 0);
+            //$("#bottomNavbar").fadeTo( "slow" , 0);
             $("#bottomNavbar").addClass("notClickable");
 
             comparsoPrimo=true;
@@ -46,7 +46,7 @@ function loadStuff(){
         else{
             $('.settingMenu').animate({ marginLeft: '1em' , opacity: 1 }, 1000);
             $( ".centralContent" ).fadeTo( "slow" , 1);
-            $( "#bottomNavbar" ).fadeTo( "slow" , 1);
+            //$( "#bottomNavbar" ).fadeTo( "slow" , 1);
             $("#bottomNavbar").removeClass("notClickable");
 
 
@@ -60,7 +60,7 @@ function loadStuff(){
             $(".centralContent").click(function (){
                 $('.settingMenu').animate({ marginLeft: '1em' , opacity: 1 }, 1000);
                 $( ".centralContent" ).fadeTo( "slow" , 1);
-                $( "#bottomNavbar" ).fadeTo( "slow" , 1);
+                //$( "#bottomNavbar" ).fadeTo( "slow" , 1);
                 $("#bottomNavbar").removeClass("notClickable");
                 count++;
                 comparsoPrimo=false;
