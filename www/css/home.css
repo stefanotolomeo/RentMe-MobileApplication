@@ -272,7 +272,7 @@ a:link{
     width: 50%;
     position: absolute;
     top: 0;
-    background-color:beige;
+    :background-color:beige;
     margin-top: 0.3em;
     }
 
