@@ -1,407 +1,91 @@
-@media only screen and (max-width:320px){
 
-.myContainer{
-    margin-right: 0;
-    margin-left: 0;
-}
+@media only screen and (min-width : 320px) and (max-width : 600px){
 
-    /*  BOTTOM NAVBAR css  */
-#bottomNavbar{
-
+.preferRow{
     display: block;
-    width: 100%;
-    height: 7%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 0.2em solid #0084B4;
-}
-
-.barElement{
-    display: inline-block;
-    height: 2em;
-    width: 17%;
+    width: 96%;
+    height: 6em;
+    background-color: #b9cbf0;
+    border: 0.1em solid black;
+    margin-top: 0.5em;
     margin-left: 0.1em;
-    margin-right: 0.1em;
 }
 
-.iconDiv{
-    display: block;
-    width: 100%;
-    height: 100%;
+.preferRow:last-child{
+    background-color: green;
+    margin-bottom: 2em;
 }
 
-.textDiv{
-    display: none;
-}
-
-#myIcon{
-    display: block;
+#preferPageTitle{
     text-align: center;
-    font-size: 1.5em;
-    padding-top: 0.1em;
-    color: #7e7e7e;
-}
-
-
-a{
-    text-decoration: none;
-    color: #0084B4;
-}
-
-a:hover{
-    text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
-}
-
-a:active{
-    text-decoration: none;
-}
-
-a:link{
-    text-decoration: none;
-}
-
-
- /*  TOP-NAVBAR css */
-.topNavbar{
-    display: block;
-    height: 6%;
-    width: 100%;
-    max-height: 2.4em;
-}
-
-.firstRow{
-    display: block;
-    width: 100%;
-    height:20%;
-}
-
-.secondRow{
-    display: block;
-    width: 100%;
-    height: 80%;
-    border:1px solid blue;
-    background-color: #0084B4;
-}
-
-.emptyDiv{
-    display: inline-block;
-    min-width: 90%;
-    height: 100%;
-}
-
-.contentDiv{
-    display: inline-block;
-    width: 8%;
-    height: 100%;
-}
-
-#topIcon{
-    width: 100%;
-    height: 100%;
+    color: black;
     font-size: 1.2em;
-    color: black;
-    text-align: right;
-
+    font-weight: bold;
+    margin-top: 0.2em;
 }
-/*   END TOP-NAVBAR  */
-
-/*   SEARCH CONTENT    */
 .centralContent{
-    display: block;
-    height: 85%;
-    width: 100%;
-    border:0.1em solid green;
-    margin-top: 0.3em;
-    }
-
+    overflow-y:scroll;
 }
 
-
-@media only screen and (min-width : 320px) and (max-width : 600px) {
-
-.myContainer{
-    margin-right: 0;
-    margin-left: 0;
-}
-    /*  BOTTOM NAVBAR css  */
-#bottomNavbar{
-    display: block;
-    width: 100%;
-    height: 3em;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 0.2em solid #0084B4;
-    background-color: lightgray;
-}
-
-#duplicatedBottomNavbar{
-    display: none;
-    width: 100%;
-    height: 3em;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 0.2em solid #0084B4;
-    background-color: lightgray;
-    :opacity: 0.5;
-}
-
-.barElement{
+.preferImage{
     display: inline-block;
-    height: 3em;
+    height: auto;
+    width: 20%;
+}
+
+.noticeImage{
+    height: 4em;
+    width: 4em;
+}
+.preferText{
+    display: inline-block;
+    height: 95%;
+    width: 78%;
+}
+
+.nameText{
+    display: block;
+    height: 70%;
+    width: auto;
+    margin-top: 0;
+}
+
+.detailText{
+    display: block;
+    height: 25%;
+    width: auto;
+}
+
+.nameTitle{
+    padding-left: 0.4em;
+    padding-top: 0.4em;
+    padding-right: 0.2em;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.detailTitle{
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    padding-left: 0.4em;
+    padding-top: 0.2em;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.priceTitle{
+    display: inline-block;
     width: 18%;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-}
-
-.iconDiv{
-    display: block;
-    width: 100%;
-    height: 65%;
-}
-
-.textDiv{
-    display: block;
-    width: 100%;
-    height: 30%;
-}
-
-#myIcon{
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 0.1em;
-    color: #7e7e7e;
-}
-
-.myText{
-    text-align: center;
-    font-size: 0.8em;
-    padding-bottom: 0.2em;
-    color: #7e7e7e;
-}
-
-a{
-    text-decoration: none;
-    color: #0084B4;
-}
-
-a:hover{
-    text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
-}
-
-a:active{
-    text-decoration: none;
-}
-
-a:link{
-    text-decoration: none;
-}
-/*  END BOTTOM-NAVBAR */
-
-
-    /*  TOP-NAVBAR css */
-.topNavbar{
-    display: block;
     height: 2em;
-    width: 100%;
-    max-height: 2.4em;
-}
-
-.firstRow{
-    display: block;
-    width: 100%;
-    height:0.5em;
-}
-
-.secondRow{
-    display: block;
-    width: 100%;
-    height: 1.5em;
-    border:1px solid blue;
-    background-color: #0084B4;
-}
-
-.emptyDiv{
-    display: inline-block;
-    min-width: 90%;
-    height: 100%;
-}
-
-.contentDiv{
-    display: inline-block;
-    width: 8%;
-    height: 100%;
-}
-
-#topIcon{
-    width: 100%;
-    height: 100%;
-    font-size: 1.4em;
-    color: black;
-    text-align: right;
-}
-
-/*   END TOP-NAVBAR  */
-
-
-/*   SEARCH CONTENT    */
-.centralContent{
-    display: block;
-    height: 80%;
-    width: 100%;
-    border:0.1em solid green;
-    margin-top: 0.3em;
-    }
-
-}
-
-
-@media only screen and (min-width:600px){
-
-
-.myContainer{
-    margin-right: 0;
-    margin-left: 0;
-}
-    /*  BOTTOM NAVBAR css  */
-#bottomNavbar{
-
-    display: block;
-    width: 100%;
-    height: 10%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 0.2em solid #0084B4;
-
-}
-
-.barElement{
-    display: inline-block;
-    height: 3em;
-    width: 18%;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-}
-
-.iconDiv{
-    display: block;
-    width: 100%;
-    height: 65%;
-}
-
-.textDiv{
-    display: block;
-    width: 100%;
-    height: 30%;
-}
-
-#myIcon{
-    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #00b200;
     text-align: center;
-    font-size: 1.5em;
-    padding-top: 0.1em;
-    color: #7e7e7e;
+    vertical-align: middle;
+    line-height: 2em;
 }
 
-.myText{
-    text-align: center;
-    font-size: 0.8em;
-    padding-bottom: 0.2em;
-    color: #7e7e7e;
 }
-
-a{
-    text-decoration: none;
-    color: #0084B4;
-}
-
-a:hover{
-    text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
-}
-
-a:active{
-    text-decoration: none;
-}
-
-a:link{
-    text-decoration: none;
-}
-/*  END BOTTOM-NAVBAR */
-
-
-    /*  TOP-NAVBAR css */
-.topNavbar{
-    display: block;
-    height: 7%;
-    width: 100%;
-    max-height: 2.4em;
-}
-
-.firstRow{
-    display: block;
-    width: 100%;
-    height:20%;
-}
-
-.secondRow{
-    display: block;
-    width: 100%;
-    height: 75%;
-    border:1px solid blue;
-    background-color: #0084B4;
-}
-
-.emptyDiv{
-    display: inline-block;
-    min-width: 90%;
-    height: 100%;
-}
-
-.contentDiv{
-    display: inline-block;
-    width: 8%;
-    height: 100%;
-}
-
-#topIcon{
-    width: 100%;
-    height: 100%;
-    font-size: 1.4em;
-    color: black;
-    text-align: right;
-
-}
-/*   END TOP-NAVBAR  */
-
-/*   SEARCH CONTENT    */
-.centralContent{
-    display: block;
-    height: 80%;
-    width: 100%;
-    border:0.1em solid green;
-    margin-top: 0.3em;
-}
-
-.myText{
-    color:red;
-}
-
-
-}
-

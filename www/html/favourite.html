@@ -2,7 +2,9 @@
 <!-- commento-->
 <head>
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/commonLayout.css">
     <link rel="stylesheet" href="../css/favourite.css">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +25,7 @@
                 </div>
 
                 <div class="contentDiv">
-                    <a href="../html/setting.html">
+                    <a id="openSettingMenu">
                         <p class="glyphicon glyphicon-cog" id="topIcon"> </p>
                     </a>
                 </div>
@@ -31,13 +33,141 @@
         </div>
     </div>
 
-    <!-- CONTAINER FOR THE CONTENT AND FOR THE BOTTOM-NAVBAR -->
-    <div class="container">
+        <!-- CONTAINER FOR THE CONTENT AND FOR THE BOTTOM-NAVBAR -->
+    <div class="allElement">
+        <div class="totalContainer">
+            <div class="centralContent">
+                <p id="preferPageTitle"> IN OSSERVAZIONE </p>
 
-        <div class="centralContent">
+                <div class="preferRow">
+                    <div class="preferImage">
+                         <img src="http://edu.lnf.infn.it/wp-content/uploads/2015/06/no-image-icon.png" class="img-responsive noticeImage"/>
+                    </div>
 
+                    <div class="preferText">
+                        <div class="nameText">
+                            <p class="nameTitle">attico mansardato ristrutturato in zona duomo</p>
+                        </div>
+
+                        <div class="detailText">
+                            <p class="detailTitle"> di Angelo Carminati</p>
+                            <span class="priceTitle"> 500€ </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preferRow">
+
+                </div>
+                <div class="preferRow">
+
+                </div>
+                <div class="preferRow">
+
+                </div>
+                <div class="preferRow">
+
+                </div>
+
+
+            </div>
+                <!--    SETTING MENU       -->
+            <div class="settingMenu">
+                <div class="settingOption">
+                    <div class="settingList" id="datiSetting">
+                        <h6> Dati <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+
+                    <div class="settingList" id="impostazioniSetting">
+                        <h6> Impostazioni <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+
+                    <div class="settingList" id="linguaSetting">
+                        <h6> Lingua <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+
+                    <div class="settingList" id="infoSetting">
+                        <h6> Info <span class="glyphicon glyphicon-chevron-right"></span>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="childDati child">
+                    <div class="childRow">
+                        <p>Massimiliano <span class="glyphicon glyphicon-pencil"></p>
+                    </div>
+
+                    <div class="childRow">
+                        <p>Rossignolini <span class="glyphicon glyphicon-pencil"></p>
+                    </div>
+
+                    <div class="childRow" id="emailDiv">
+                        <p id="firstEmail">massimiliano.rossignolinimi</p>
+                        <p id="secondEmail"> @gmail.com </p>
+                    </div>
+
+                    <div class="childRow">
+                        <p>Maschio <span class="glyphicon glyphicon-pencil"> </p>
+                    </div>
+
+                    <div class="childRow">
+                        <p>09/11/1992 <span class="glyphicon glyphicon-pencil"> </p>
+                    </div>
+
+                    <div class="childRow">
+                        <p>Milano <span class="glyphicon glyphicon-pencil"> </p>
+                    </div>
+
+                    <div class="childRow">
+                        <p>via Milano 15 <span class="glyphicon glyphicon-pencil"> </p>
+                    </div>
+
+                    <div class="childRow lastRow">
+                        <p>Rozzano <span class="glyphicon glyphicon-pencil"> </p>
+                    </div>
+                </div>
+
+                <div class="childImpostazioni child">
+                    <div class="childRow lastRow">
+                        <p> Alcune impostazioni</p>
+                    </div>
+
+                </div>
+
+                <div class="childLingua child">
+                    <div class="childRow">
+                        <p> ITALIANO</p>
+                    </div>
+
+                    <div class="childRow">
+                        <p> INGLESE</p>
+                    </div>
+
+                    <div class="childRow">
+                        <p> SPAGNOLO</p>
+                    </div>
+
+                    <div class="childRow lastRow">
+                        <p> FRANCESE</p>
+                    </div>
+
+                </div>
+
+                <div class="childInfo child">
+                    <div class="infoDiv lastRow">
+                        <p>App per smartphones and tablets realizzata da Stefano Tolomeo e Simone Rubiu.
+                           Questa app è di proprietà intellettuale delle persone sopra citate.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
+
+
 
           <!-- BOTTOM NAVBAR -->
         <div id="bottomNavbar">
@@ -104,11 +234,67 @@
 
         </div>
 
+
+        <!--DUPLICATED BOTTOM NAVBAR -->
+         <div id="duplicatedBottomNavbar">
+
+            <div class="barElement" id="search">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-search" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Cerca </p>
+                    </div>
+            </div>
+
+            <div class="barElement" id="rent">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-tags" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Affitta </p>
+                    </div>
+            </div>
+
+            <div class="barElement" id="home">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-home" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Home </p>
+                    </div>
+            </div>
+
+            <div class="barElement" id="favourite">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-heart selected" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText selected"> Preferiti </p>
+                    </div>
+            </div>
+
+            <div class="barElement" id="message">
+                    <div class="iconDiv">
+                        <p class="glyphicon glyphicon-envelope" id="myIcon"> </p>
+                    </div>
+
+                    <div class="textDiv">
+                        <p class="myText"> Messaggi </p>
+                    </div>
+            </div>
+
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
 
+    <script src="../js/menuAnimation.js"></script>
     <script src="../js/favourite.js"></script>
 </body>
 

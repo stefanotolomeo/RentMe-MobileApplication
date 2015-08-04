@@ -1,5 +1,5 @@
-$(document).ready(loadStuff);
-
-function loadStuff(){
-    $(".selected").css("color","blue");
-}
+//$(document).ready(loadStuff);
+//
+//function loadStuff(){
+//    $(".selected").css("color","blue");
+//}
