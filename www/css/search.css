@@ -138,12 +138,24 @@ a:link{
 #bottomNavbar{
     display: block;
     width: 100%;
-    height: 9%;
+    height: 3em;
     position: fixed;
     bottom: 0;
     left: 0;
     border-top: 0.2em solid #0084B4;
     background-color: lightgray;
+}
+
+#duplicatedBottomNavbar{
+    display: none;
+    width: 100%;
+    height: 3em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 0.2em solid #0084B4;
+    background-color: lightgray;
+    :opacity: 0.5;
 }
 
 .barElement{
@@ -207,7 +219,7 @@ a:link{
     /*  TOP-NAVBAR css */
 .topNavbar{
     display: block;
-    height: 7%;
+    height: 2em;
     width: 100%;
     max-height: 2.4em;
 }
@@ -215,13 +227,13 @@ a:link{
 .firstRow{
     display: block;
     width: 100%;
-    height:20%;
+    height:0.5em;
 }
 
 .secondRow{
     display: block;
     width: 100%;
-    height: 80%;
+    height: 1.5em;
     border:1px solid blue;
     background-color: #0084B4;
 }
@@ -244,9 +256,10 @@ a:link{
     font-size: 1.4em;
     color: black;
     text-align: right;
-
 }
+
 /*   END TOP-NAVBAR  */
+
 
 /*   SEARCH CONTENT    */
 .centralContent{
