@@ -2,7 +2,6 @@
 var count=0;
 var menuVisible=false;
 var opened=false;
-//var menuVisible=false;
 
 $(document).ready(loadStuff);
 
