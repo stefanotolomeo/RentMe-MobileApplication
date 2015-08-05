@@ -4,15 +4,29 @@
 .preferRow{
     display: block;
     width: 96%;
-    height: 6em;
+    height: 7em;
     background-color: #b9cbf0;
-    border: 0.1em solid black;
-    margin-top: 0.5em;
+    border: 0.25em solid black;
+    margin-top: 1em;
     margin-left: 0.1em;
 }
 
+.a{
+    display: block;
+    height: 7em;
+    width: 100%;
+}
+
+.b{
+    display: none;
+    height: 1px;
+    width: 100%;
+    background-color: beige;
+    padding-top: 0.3em;
+    position: relative;
+}
+
 .preferRow:last-child{
-    background-color: green;
     margin-bottom: 2em;
 }
 
@@ -34,8 +48,8 @@
 }
 
 .noticeImage{
-    height: 4em;
-    width: 4em;
+    max-height: 90%;
+    max-width: 90%;
 }
 .preferText{
     display: inline-block;
@@ -45,14 +59,14 @@
 
 .nameText{
     display: block;
-    height: 70%;
+    height: 60%;
     width: auto;
     margin-top: 0;
 }
 
 .detailText{
     display: block;
-    height: 25%;
+    height: 35%;
     width: auto;
 }
 
@@ -79,13 +93,75 @@
 .priceTitle{
     display: inline-block;
     width: 18%;
-    height: 2em;
+    height: 90%;
     font-size: 1em;
     font-weight: bold;
     background-color: #00b200;
     text-align: center;
-    vertical-align: middle;
     line-height: 2em;
+}
+
+
+
+.b1{
+    display: block;
+    height: 85%;
+    width: 100%;
+}
+
+.b2{
+    display: block;
+    height: 15%;
+    width: 100%;
+}
+
+.b1a{
+    display: inline-block;
+    height: auto;
+    width: 48%;
+    position: absolute;
+}
+
+.b1b{
+    display: inline-block;
+    height: auto;
+    width: 50%;
+    position: absolute;
+    margin-left: 50%;
+}
+
+ul{
+    padding-left: 1.4em;
+}
+
+li{
+    width: 90%;
+    font-size: 0.8em;
+    padding-top:0.2em;
+    :line-height: 0.9em;
+
+}
+
+.listHeader{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#closeButton{
+    height: 100%;
+    font-size: 0.8em;
+    float: left;
+    margin-left: 0.2em;
+}
+
+#contactButton{
+    font-size: 0.8em;
+    float: right;
+    margin-right: 0.2em;
+}
+
+.divNotClickable{
+    pointer-events: none;
 }
 
 }
