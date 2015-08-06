@@ -126,11 +126,10 @@
     height: 100%;
     width: 8%;
     float: left;
-    background-color: gray;
+    background-color: #cccccc;
     margin-top: 0.2em;
     border-right: 0.1em solid black;
-
-
+    opacity: 0.4;
 }
 
 .changeRightDiv{
@@ -138,9 +137,11 @@
     height: 100%;
     width: 8%;
     float: right;
-    background-color: gray;
+    background-color: #cccccc;
     margin-top: 0.2em;
     border-left: 0.1em solid black;
+    opacity: 0.4;
+
 }
 
 .myContent{
@@ -150,7 +151,11 @@
     margin-left: 0.1em;
     margin-right: 0.1em;
     margin-top: 0.2em;
+    background-color: yellow;
+}
 
-
+.arrowImage{
+    height: 100%;
+    width: 100%;
 }
 }
