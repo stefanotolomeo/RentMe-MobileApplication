@@ -176,17 +176,15 @@
 
 .c1{
     display: inline-block;
-    width: 18em;
+    width: 42%;
     height: 100%;
     background-color: yellow;
-    :z-index: -1;
 }
 
 .c2{
     display:inline-block;
-    width: 18em;
+    width: 42%;
     height: 100%;
-   : opacity: 0;
     background-color: aqua;
 }
 
@@ -198,14 +196,14 @@
 .immagineAnnuncio{
     display: inline-block;
     height: 100%;
-    width: 30%;
+    width: 25%;
 
 }
 
 .testoAnnuncioDiv{
     display: inline-block;
     height: 98%;
-    width: 68%;
+    width: 70%;
     margin: 0;
     vertical-align: top;
    : background-color: antiquewhite;

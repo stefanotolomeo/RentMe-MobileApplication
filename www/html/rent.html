@@ -2,7 +2,9 @@
 <!-- commento-->
 <head>
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/commonLayout.css">
     <link rel="stylesheet" href="../css/rent.css">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,25 +35,28 @@
 
     <!-- CONTAINER FOR THE CONTENT AND FOR THE BOTTOM-NAVBAR -->
     <div class="container">
+        <div class="totalContainer">
+            <div class="centralContent">
+                <p id="preferPageTitle"> I TUOI ANNUNCI </p>
 
-        <div class="centralContent">
-            <div class="newDiv">
-                <a href="addRentNotice.html" id="newLink"> Nuovo annuncio <span class="glyphicon glyphicon-plus"> </span> </a>
-            </div>
+                <div class="newDiv">
+                    <a href="addRentNotice.html" id="newLink"> Nuovo annuncio <span class="glyphicon glyphicon-plus"> </span> </a>
+                </div>
 
-            <div class="noticeList" ng-controller="noticeListCtrl">
-                <div class="noticePanel" ng-repeat="a in annunci">
-                    <a href="rentDetail.html?id={{a.id}}" id="linkDetail">
-                        <div class="noticeHeader">{{a.nome}}</div>
-                    </a>
+                <div class="noticeList" ng-controller="noticeListCtrl">
+                    <div class="noticePanel" ng-repeat="a in annunci">
+                        <a href="rentDetail.html?id={{a.id}}" id="linkDetail">
+                            <div class="noticeHeader">{{a.nome}}</div>
+                        </a>
 
-                    <div class="noticeModify">
-                        <a href=""> - modifica - </a>
+                        <div class="noticeModify">
+                            <a href=""> - modifica - </a>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
-
         </div>
     </div>
           <!-- BOTTOM NAVBAR -->

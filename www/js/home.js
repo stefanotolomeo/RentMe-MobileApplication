@@ -67,18 +67,51 @@ $(document).ready(start);
 function start(){
     //var myVar = setInterval(function () {changeNotice()}, 2000);
 
+    var leftArrowAble=false;
+    var rightArrowAble=true;
 
-    $(".pageTitleDiv").click(function(){
+    $(".changeLeftDiv").css("opacity",0.2);
+
+    $(".changeRightDiv").click(function(){
         //$(".myContent").fadeOut("slow");
+        if(rightArrowAble==true){
+            $(".c2").fadeTo("slow",1);
 
-        $(".c1").animate({
-            marginLeft: '-18em' ,
-            opacity:0
+            $(".c1").animate({
+                marginLeft: '-43%',
+                opacity:0
+            }, 500);
+            //$(".c1").fadeTo("slow",0);
+            //$(".c2").fadeTo("slow",1);
+
+            $(".changeLeftDiv").fadeTo("slow",1);
+            $(".changeRightDiv").fadeTo("slow",0.2);
+
+
+            leftArrowAble=true;
+            rightArrowAble=false;
+
+
+        }
+    });
+
+    $(".changeLeftDiv").click(function(){
+        if(leftArrowAble==true){
+            $(".c2").fadeTo("slow",0);
+
+
+            $(".c1").animate({
+                marginLeft: '0',
+                opacity:1
         }, 500);
-        //$(".c1").fadeTo("slow",0);
-        $(".c2").fadeTo("slow",1);
 
+        $(".changeRightDiv").fadeTo("slow",1);
+        $(".changeLeftDiv").fadeTo("slow",0.2);
 
+        rightArrowAble=true;
+        leftArrowAble=false;
+
+        }
     });
 
 }

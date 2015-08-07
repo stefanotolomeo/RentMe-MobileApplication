@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/commonLayout.css">
     <link rel="stylesheet" href="../css/search.css">
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -33,49 +34,50 @@
         </div>
 </div>
     <div class="container">
+        <div class="totalContainer">
+            <div class="centralContent">
+                <div class="searchBox">
+                    <div class="area">
+                        <div class="areaText">
+                            <p class="textChoice"> Area: </p>
+                        </div>
 
-        <div class="centralContent">
-            <div class="searchBox">
-                <div class="area">
-                    <div class="areaText">
-                        <p class="textChoice"> Area: </p>
+                        <div class="areaOption">
+                            <form>
+                                <input type="radio" name="area" value="centro" checked>Centro
+
+                                <input type="radio" name="area" value="nord">Nord
+
+                                <input type="radio" name="area" value="sud">Sud
+
+                                <input type="radio" name="area" value="ovest">Ovest
+
+                                <input type="radio" name="area" value="est">Est
+                            </form>
+                        </div>
                     </div>
 
-                    <div class="areaOption">
-                        <form>
-                            <input type="radio" name="area" value="centro" checked>Centro
+                    <div class="zona">
+                        <div class="zonaText">
+                            <p class="textChoice">Zona: </p>
+                        </div>
 
-                            <input type="radio" name="area" value="nord">Nord
-
-                            <input type="radio" name="area" value="sud">Sud
-
-                            <input type="radio" name="area" value="ovest">Ovest
-
-                            <input type="radio" name="area" value="est">Est
-                        </form>
+                        <div class="zonaOption">
+                            <select>
+                                  <option value="empty"></option>
+                                  <option value="z1">Stazione Centrale</option>
+                                  <option value="z2">Garibaldi</option>
+                                  <option value="z3">Porta Venezia</option>
+                                  <option value="z4">Loreto/Piola</option>
+                            </select>
+                        </div>
                     </div>
+
+
                 </div>
 
-                <div class="zona">
-                    <div class="zonaText">
-                        <p class="textChoice">Zona: </p>
-                    </div>
-
-                    <div class="zonaOption">
-                        <select>
-                              <option value="empty"></option>
-                              <option value="z1">Stazione Centrale</option>
-                              <option value="z2">Garibaldi</option>
-                              <option value="z3">Porta Venezia</option>
-                              <option value="z4">Loreto/Piola</option>
-                        </select>
-                    </div>
+                <div id="googleMap">
                 </div>
-
-
-            </div>
-
-            <div id="googleMap">
             </div>
         </div>
 
