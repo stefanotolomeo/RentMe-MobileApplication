@@ -14,11 +14,11 @@
 .mostViewed{
     display: block;
     width: 90%;
-    height: 35%;
+    height: 8em;
     background-color: #f2f2f2;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 1.3em;
     border-radius: 0.5em;
     border: 0.3em solid #0084B4;
 }
@@ -26,19 +26,26 @@
 .yourResearch{
     display: block;
     width: 90%;
-    height: 30%;
+    height: 8em;
     background-color: #e5e5e5;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 1.3em;
     border-radius: 0.5em;
+    border: 0.3em solid #0084B4;
+
 }
 
 .latestNotice{
     display: block;
-    width: 100%;
-    height: 30%;
+    width: 90%;
+    height: 8em;
     background-color: #d8d8d8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.3em;
+    border-radius: 0.5em;
+    border: 0.3em solid #0084B4;
     margin-bottom: 2em;
 }
 
@@ -84,14 +91,14 @@
 /*  END TITLE    */
 
 /* START MOSTVIEWED */
-.mostViewedTitleDiv{
+.mostViewedTitleDiv, .yourResearchTitleDiv, .latestNoticeTitleDiv{
     display: block;
     width: 100%;
     height: 25%;
     background-color: #d8d8d8;
 }
 
-.mostViewedContentDiv{
+.mostViewedContentDiv,.yourResearchContentDiv, .latestNoticeContentDiv{
     display: block;
     width: 100%;
     height: 73%;
@@ -99,11 +106,11 @@
     border-top: 1px solid black;
 }
 
-.mostViewedTitle{
+.mostViewedTitle, .yourResearchTitle, .latestNoticeTitle{
     height: 100%;
-    width: 40%;
+    width: 70%;
     float: left;
-    font-size: 140%;
+    font-size: 1.3em;
     color: black;
     padding-left: 0.5em;
     padding-top: 0.3em;
@@ -111,14 +118,16 @@
     margin: 0;
 }
 
-.mostViewedSeeAll{
+.mostViewedSeeAll, .yourResearchSeeAll, .latestNoticeSeeAll{
     height: 100%;
-    width: 20%;
+    width: 15%;
     float: right;
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding-top: 1em;
-    padding-right: 0.2em;
     margin: 0;
+    :text-align: right;
+    padding-right: 0.2em;
+
 }
 
 .changeLeftDiv{
@@ -151,11 +160,68 @@
     margin-left: 0.1em;
     margin-right: 0.1em;
     margin-top: 0.2em;
-    background-color: yellow;
 }
 
 .arrowImage{
     height: 100%;
     width: 100%;
 }
+
+.immagineAnnuncio{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+
+}
+
+.testoAnnuncioDiv{
+    display: inline-block;
+    height: 98%;
+    width: 68%;
+    margin: 0;
+    vertical-align: top;
+   : background-color: antiquewhite;
+
+}
+
+.presentationImage{
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid black;
+    border-radius: 1em;
+}
+
+.nomeAnnuncioTextDiv{
+    display: block;
+    height: 73%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+
+}
+
+.otherTextDiv{
+    display: block;
+    height: 25%;
+    width: 100%;
+}
+
+.nomeAnnuncioTextDiv>p{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-top: 0.4em;
+
+}
+
+.otherTextDiv>p{
+    font-size: 0.6em;
+    text-align: center;
+    padding-top: 0.3em;
+    font-style: italic;
+}
+
+
 }
