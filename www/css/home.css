@@ -3,6 +3,7 @@
 
 .centralContent{
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .pageTitleDiv{
     display: block;
