@@ -1,0 +1,115 @@
+
+@media only screen and (min-width : 320px) and (max-width : 600px){
+
+.searchBarDiv{
+    display: block;
+    width: 100%;
+    height: 4em;
+    background-color: aliceblue;
+}
+
+.chatListDiv{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.searchBarDiv>input{
+    text-align: center;
+    height: 3em;
+    width: 100%;
+    border: 0.8em solid #a8a8a8;
+    font-size: 0.9em;
+    margin-top: 0.6em;
+}
+
+.chatRow{
+    display: block;
+    height: 4em;
+    width: 100%;
+    background-color: peachpuff;
+    border-top: 0.1em solid black;
+
+}
+
+.chatRow:last-child{
+    border-bottom: 0.1em solid black;
+}
+
+.chatImageDiv{
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+}
+
+.chatInfoDiv{
+    display: inline-block;
+    height: 100%;
+    width: 70%;
+    vertical-align: top;
+}
+
+
+.chatArrowDiv{
+    display: inline-block;
+    height: 100%;
+    width: 7%;
+    vertical-align: top;
+
+}
+
+.chatArrowDiv>span{
+    font-size: 1.5em;
+    padding-top: 50%;
+
+}
+
+.chatImage{
+    width: 100%;
+    height: 100%;
+}
+
+.chatHeader{
+    display: block;
+    width: 100%;
+    height: 40%;
+}
+
+.chatMessageInfo{
+    display: block;
+    width: 100%;
+    height: 58%;
+}
+
+.chatPersonNameDiv{
+    display: inline-block;
+    height: 100%;
+    width: 80%;
+}
+
+.chatTime{
+    display: inline-block;
+    height: 100%;
+    width: 18%;
+    vertical-align: top;
+}
+
+.chatPersonNameDiv>p{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 0.2em;
+}
+
+.chatTime>p{
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.chatMessageInfo>p{
+    max-height: 100%;
+    font-size: 0.8em;
+    text-align: left;
+    padding-left: 0.2em;
+}

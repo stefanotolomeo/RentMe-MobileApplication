@@ -5,7 +5,7 @@
     display: block;
     width: 90%;
     height: 30%;
-    margin-left: 0.2em;
+    margin-left: 1em;
     border: 0.2em solid red;
 }
 
@@ -13,7 +13,7 @@
     display: block;
     width: 90%;
     height: 65%;
-    margin-left: 0.2em;
+    margin-left: 1em;
     margin-top: 1em;
     border: 0.2em solid black;
 
