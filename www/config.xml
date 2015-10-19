@@ -47,7 +47,7 @@
     -->
 
     <!-- Plugins -->
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.8.0" source="npm">
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.9.0" source="npm">
         <param name="APP_ID" value="867006893383189" />
         <param name="APP_NAME" value="rentME" />
     </gap:plugin>
