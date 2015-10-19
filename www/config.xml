@@ -48,9 +48,9 @@
 
     <!-- Plugins -->
 
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="<VERSION>">
-        <param name="APP_ID" value="<YOUR_APP_ID>" />
-        <param name="APP_NAME" value="<YOUR_APP_NAME>" />
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.8.0">
+        <param name="APP_ID" value="867006893383189" />
+        <param name="APP_NAME" value="rentME" />
     </gap:plugin>
     <!-- Core plugins -->
     <gap:plugin name="org.apache.cordova.battery-status" />
