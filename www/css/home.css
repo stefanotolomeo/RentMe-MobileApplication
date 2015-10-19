@@ -2,253 +2,122 @@
 @media only screen and (min-width : 320px) and (max-width : 600px){
 
 .centralContent{
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
-.pageTitleDiv{
+
+.newsDiv{
+    display: block;
+    background-color: lightgray;
+    width: 100%;
+    height: 40%;
+    border-bottom: 0.2em solid black;
+
+
+}
+
+.yourResearchDiv{
+    display: block;
+    background-color: green;
+    width: 100%;
+    height: 25%;
+    margin-top: 5%;
+    border-bottom: 0.2em solid black;
+
+}
+
+.mostViewedDiv{
+    display: block;
+    background-color: orange;
+    width: 100%;
+    height: 25%;
+    margin-top: 5%;
+    border-bottom: 0.2em solid black;
+
+}
+
+
+/* START DIV */
+
+.newsTitleDiv{
     display: block;
     width: 100%;
     height: 15%;
-    border-bottom: 0.2em solid black;
-}
-
-.mostViewed{
-    display: block;
-    width: 100%;
-    height: 22%;
-    background-color: #f2f2f2;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5em;
-    border-radius: 0.5em;
-    border-top: 0.3em solid #0084B4;
-    border-bottom: 0.3em solid #0084B4;
-}
-
-.yourResearch{
-    display: block;
-    width: 90%;
-    height: 22%;
-    background-color: #e5e5e5;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5em;
-    border-radius: 0.5em;
-    border: 0.3em solid #0084B4;
-
-}
-
-.latestNotice{
-    display: block;
-    width: 90%;
-    height: 22%;
-    background-color: #d8d8d8;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5em;
-    border-radius: 0.5em;
-    border: 0.3em solid #0084B4;
-    :margin-bottom: 2em;
-}
-
-/*  START TITLE */
-
-.myTitle{
-    display: block;
-    width: 100%;
-    height: 40%;
-    background-color: #e5e5e5;
-}
-
-.mySubtitle{
-    display: block;
-    width: 100%;
-    height: 60%;
-    background-color: #e5e5e5;
-    line-height: 2em;
-
-}
-
-#pageTitle{
     text-align: center;
-    color: black;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: cursive;
-    margin: 0;
 }
 
-#pageSubtitle{
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 1.2em;
-    font-style: italic;
-    padding-top: 0.5em;
+.newsContentDiv{
+    display: block;
+    width: 100%;
+    height: 85%;
 }
 
-#subtitleIcon{
-    color: #0084B4;
+.newsOne{
+    display: block;
+    width: 100%;
+    height: 65%;
 }
-/*  END TITLE    */
 
-/* START DIV */
-.mostViewedTitleDiv, .yourResearchTitleDiv, .latestNoticeTitleDiv{
+.newsTwo{
     display: block;
     width: 100%;
     height: 25%;
-    background-color: #d8d8d8;
+    margin-top: 5%;
 }
 
-.mostViewedContentDiv,.yourResearchContentDiv, .latestNoticeContentDiv{
-    display: block;
-    width: 100%;
-    height: 73%;
-    background-color: #e5e5e5;
-    border-top: 1px solid black;
-}
-
-.mostViewedTitle, .yourResearchTitle, .latestNoticeTitle{
-    height: 100%;
-    width: 70%;
-    float: left;
-    font-size: 1.2em;
-    color: black;
-    padding-left: 0.5em;
-    padding-top: 0.2em;
-    font-family: fantasy;
-    margin: 0;
-}
-
-.mostViewedSeeAll, .yourResearchSeeAll, .latestNoticeSeeAll{
-    height: 100%;
-    width: 15%;
-    float: right;
-    font-size: 0.7em;
-    padding-top: 0.9em;
-    margin: 0;
-    padding-right: 0.2em;
+.newsTitleText{
+    font-size: 1.3em;
 
 }
 
-.changeLeftDiv{
+.newsPhotoDiv{
     display: inline-block;
     height: 100%;
-    width: 8%;
-    float: left;
-    background-color: #cccccc;
-    margin-top: 0.2em;
-    border-right: 0.1em solid black;
-    :opacity: 0.4;
-    position: relative;
-    z-index: 2;
+    width: 45%;
 }
 
-.changeRightDiv{
+.newsTextDiv{
     display: inline-block;
     height: 100%;
-    width: 8%;
-    float: right;
-    background-color: #cccccc;
-    margin-top: 0.2em;
-    border-left: 0.1em solid black;
-    :opacity: 0.4;
-    position: relative;
-    z-index: 2;
-}
-
-.myContent{
-    display: inline-block;
-    height: 100%;
-    width: 83%;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-    margin-top: 0.2em;
-    position: relative;
-    z-index: 1;
-}
-
-.c{
-    display: block;
-    height: 100%;
-    width: 250%;
-
-}
-
-.c1{
-    display: inline-block;
-    width: 42%;
-    height: 100%;
-    background-color: yellow;
-}
-
-.c2{
-    display:inline-block;
-    width: 42%;
-    height: 100%;
-    background-color: aqua;
-}
-
-.arrowImage{
-    height: 100%;
-    width: 100%;
-}
-
-.immagineAnnuncio{
-    display: inline-block;
-    height: 100%;
-    width: 25%;
-
-}
-
-.testoAnnuncioDiv{
-    display: inline-block;
-    height: 98%;
-    width: 70%;
-    margin: 0;
+    width: 50%;
     vertical-align: top;
-   : background-color: antiquewhite;
 
 }
-
-.presentationImage{
+.newsPhoto{
+    width: 100%;
     height: 100%;
-    width: 100%;
-    border: 0.1em solid black;
-    border-radius: 1em;
+    margin:auto;
+    border-radius: 10em;
 }
 
-.nomeAnnuncioTextDiv{
-    display: block;
-    height: 73%;
-    width: 100%;
-    position: relative;
+.newsPrice{
     margin: 0;
-
-}
-
-.otherTextDiv{
-    display: block;
-    height: 25%;
+    height: 40%;
     width: 100%;
+    text-align: center;
+    font-size: 2em;
+    background-color: forestgreen;
+    line-height: 1.5em;
 }
 
-.nomeAnnuncioTextDiv>p{
-    text-align: center;
+.newsInfo{
+    height: 50%;
+    width: 100%;
+    padding-left: 1em;
+    margin-top: 3%;
+    background-color: red;
+}
+
+.newsDescriptionText{
     height: 100%;
     width: 100%;
-    font-size: 0.8em;
-    font-weight: bold;
-    padding-top: 0.4em;
-
+    :background-color: royalblue;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.9em;
 }
-
-.otherTextDiv>p{
-    font-size: 0.6em;
-    text-align: center;
-    padding-top: 0.3em;
-    font-style: italic;
-}
-
 
 }

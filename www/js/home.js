@@ -85,8 +85,7 @@ function start(){
             //$(".c2").fadeTo("slow",1);
 
             $(".changeLeftDiv").fadeTo("slow",1);
-            $(".changeRightDiv").fadeTo("slow",0.2);
-
+            $(".provaArrow").fadeTo("slow",0.2);
 
             leftArrowAble=true;
             rightArrowAble=false;
