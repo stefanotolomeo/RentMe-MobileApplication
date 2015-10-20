@@ -1,4 +1,5 @@
 $(document).ready(prova);
+$(document).domain = 'www.facebook.com';
 
 function eraseLogin() {
 
@@ -65,31 +66,43 @@ function signUp(){
 
 
 function login(){
+
     console.log("dentro login");
 
 
-    var emailLogin=document.getElementById("emailLogin").value;
+   /* var emailLogin=document.getElementById("emailLogin").value;
     var pwLogin=document.getElementById("passwordLogin").value;
 
     alert(pwLogin);
     alert(emailLogin);
+*/
 
 
-    /*$.ajax({
+
+
+    $.ajax({
         method: "POST",
-        //dataType: "json", //type of data
+        dataType: "json", //type of data
         crossDomain: true,
-        url: "http://rentme.altervista.org/Login/login.php", //Relative or absolute path to file.php file
-        data: {email:emailLogin , pw:pwLogin},
+        url: "http://rentme.altervista.org/1353/fbconfig.php", //Relative or absolute path to file.php file
+        //data: {email:emailLogin , pw:pwLogin},
 
         success: function(response) {
+            console.log("dentro ajax");
             //console.log(response);
-            var userId=JSON.parse(response);
+            var user=JSON.parse(response);
 
-            var myId=userId[0].id;
+            var fbId=user[0];
+            var fbFirst=user[1];
+            var fbLast=user[2];
+            var fbMail=user[3];
 
-            console.log(myId);
-            //document.location.href="html/home.html?id=myId";
+
+            console.log(fbId);
+            console.log(fbFirst);
+            console.log(fbLast);
+            console.log(fbMail);
+
         },
 
         error: function(request,error)
@@ -97,9 +110,10 @@ function login(){
             console.log(request+":"+error);
         }
     });
+   // */
     console.log("fine login");
     eraseLogin();
-    return false;*/
+    return false;
 }
 
 function prova(){
